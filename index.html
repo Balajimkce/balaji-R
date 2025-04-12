@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Dealership</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; }
+    header { background: #333; color: white; padding: 20px; text-align: center; }
+    .container { padding: 20px; }
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .car-card {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .car-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .car-card button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MKCE Car Dealership</h1>
+    <p>Your dream car is just a click away</p>
+  </header>
+  <div class="container">
+    <h2>Our Car Collection</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="images/car1.png" alt="Car 1">
+        <h3>Sporty Red</h3>
+        <button onclick="location.href='https://example.com/sporty-red'">View Details</button>
+      </div>
+      <div class="car-card">
+        <img src="images/car2.png" alt="Car 2">
+        <h3>Luxury Black</h3>
+        <button onclick="location.href='https://example.com/luxury-black'">View Details</button>
+      </div>
+      <div class="car-card">
+        <img src="images/car3.png" alt="Car 3">
+        <h3>Eco Friendly</h3>
+        <button onclick="location.href='https://example.com/eco-friendly'">View Details</button>
+      </div>
+      <div class="car-card">
+        <img src="images/car4.png" alt="Car 4">
+        <h3>Family SUV</h3>
+        <button onclick="location.href='https://example.com/family-suv'">View Details</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Created by: CSBS Student | MKCE | 3rd Year | Fortinet FCF Certified</p>
+    <p>&copy; 2025 MKCE Car Dealership</p>
+  </footer>
+</body>
+</html>
